@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position 실습</title>
+  <style>
+
+    div.background{
+      background-image: url("http://www.epeopletoday.com/news/photo/201705/12296_13956_4350.jpg");
+      background-size: 100% 100%; 
+      width: 500px;
+      height: 315px;
+      margin: 0 20%;
+      position: relative;
+      z-index: 1;
+    }
+
+    div.img {
+      background-image: url("http://koreaitacademy.com/renewal2021/img/tch/teacher007.png");
+      /* background-size: 좌우 상하 */
+      background-size: 75%; 
+      background-repeat: no-repeat;
+      width: 200px;
+      height: 315px;
+      right: -10px;
+      bottom: -100px;
+      margin: 0 auto;
+      position: absolute;
+      z-index: 2;
+    }
+    
+    .cow{
+      background-size: 100% 100%; 
+      width: 250px;
+      height: 300px;
+      left: 10px;
+      bottom: -70px;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .clothes{
+      background-size: 100% 100%; 
+      width: 200px;
+      height: 110px;
+      right: 30px;
+      bottom: 95px;
+      position: absolute;
+      z-index: 3;
+    }
+
+    .sunglass{
+      background-size: 100% 100%; 
+      width: 65px;
+      height: 60px;
+      top: 30px;
+      right: 108px;
+      position: absolute;
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+    <div class="background">
+      <div><img class="cow" src="cow.png"></div>
+      <div class="img">
+        <div><img class="clothes" src="hawaian.png"></img></div>
+        <div><img class="sunglass" src="sunglass.png"></img></div>
+      </div>
+    </div>
+</body>
+</html>

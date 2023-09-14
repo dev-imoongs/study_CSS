@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index</title>
+  <style>
+    #container1, #container2, #container3 {
+      position: relative;
+      top: 0;
+      width: 300px;
+      height: 100px;
+    }
+
+    #container1 {
+      background-color: red;
+      z-index: 1;
+    }
+
+    #container2 {
+      background-color: blue;
+      top: -100px;
+      z-index: 2;
+    }
+
+    #container3 {
+      background-color: green;
+      top: -200px;
+      z-index: 3;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container1"></div>
+  <div id="container2"></div>
+  <div id="container3"></div>
+</body>
+</html>
